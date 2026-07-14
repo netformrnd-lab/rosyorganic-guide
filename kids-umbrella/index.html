@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>어린이 안전우산 촬영 가이드 | 모여라딜</title>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+:root{
+  --ink:#231f14;
+  --gray-900:#2e2a1d;
+  --gray-700:#5f5844;
+  --gray-500:#948c74;
+  --gray-300:#e2dcc8;
+  --gray-100:#f3eede;
+  --gray-50:#faf6ea;
+  --white:#fff;
+  --accent:#f6b100;       /* yellow */
+  --accent-dark:#b7810a;
+  --mint:#e0a92e;         /* honey */
+  --lav:#f59331;          /* orange */
+  --pink:#f97b4f;         /* coral */
+  --sky:#f6c445;          /* light amber */
+  --radius:20px;
+  --radius-sm:12px;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+  font-family:'Pretendard',-apple-system,BlinkMacSystemFont,sans-serif;
+  background:#f2e9d4;
+  color:var(--ink);
+  line-height:1.65;
+  word-break:keep-all;
+  -webkit-font-smoothing:antialiased;
+  padding:32px 16px;
+}
+
+.page{
+  width:760px;max-width:100%;margin:0 auto;
+  background:var(--white);border-radius:28px;overflow:hidden;
+  box-shadow:0 12px 50px rgba(120,90,20,.14);
+}
+
+/* ---------- Hero ---------- */
+.hero{
+  position:relative;
+  padding:48px 44px 44px;
+  background:#ffe39a;
+  overflow:hidden;
+}
+.hero .eyebrow{
+  display:inline-flex;align-items:center;gap:7px;
+  background:#fff;border:1px solid var(--gray-300);
+  font-size:13px;font-weight:800;color:var(--accent-dark);
+  padding:7px 14px;border-radius:999px;margin-bottom:18px;
+  box-shadow:0 4px 14px rgba(160,120,20,.10);
+}
+.hero h1{
+  font-size:34px;font-weight:800;letter-spacing:-.035em;line-height:1.25;
+  color:var(--ink);
+}
+.hero .lead{
+  margin-top:16px;font-size:15.5px;font-weight:500;color:var(--gray-700);max-width:460px;
+}
+.hero .product-chip{
+  display:inline-block;margin-top:22px;
+  background:var(--ink);color:#fff;
+  font-size:14px;font-weight:700;padding:9px 18px;border-radius:999px;
+}
+
+/* ---------- Body ---------- */
+.body{padding:14px 44px 48px;}
+
+.sec{margin-top:38px;}
+.sec-head{margin-bottom:18px;}
+.sec-kicker{
+  font-size:12.5px;font-weight:800;letter-spacing:.02em;color:var(--accent-dark);
+  text-transform:uppercase;margin-bottom:6px;
+}
+.sec-head h2{font-size:22px;font-weight:800;letter-spacing:-.025em;line-height:1.3;}
+.sec-head p{font-size:14.5px;color:var(--gray-700);margin-top:7px;}
+
+/* ---------- 제품 정보 (spec) ---------- */
+.spec{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:10px;
+}
+.spec-item{
+  border:1px solid var(--gray-100);background:var(--gray-50);
+  border-radius:var(--radius-sm);padding:14px 16px;
+}
+.spec-item .sl{
+  display:block;font-size:11.5px;font-weight:800;color:var(--accent-dark);
+  letter-spacing:.02em;margin-bottom:4px;
+}
+.spec-item strong{font-size:15px;font-weight:800;color:var(--gray-900);letter-spacing:-.01em;}
+.spec-note{font-size:12px;color:var(--gray-500);margin-top:10px;}
+
+/* ---------- 소구포인트 grid ---------- */
+.appeal-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:14px;
+}
+.appeal{
+  border:1px solid var(--gray-100);border-radius:var(--radius);
+  padding:20px 20px 18px;background:var(--gray-50);
+}
+.appeal .ico{
+  width:44px;height:44px;border-radius:13px;display:flex;align-items:center;justify-content:center;
+  font-size:22px;margin-bottom:13px;
+}
+.appeal.c1 .ico{background:#fff0c2;}
+.appeal.c2 .ico{background:#ffe7ad;}
+.appeal.c3 .ico{background:#ffdfb0;}
+.appeal.c4 .ico{background:#ffd9c4;}
+.appeal h3{font-size:16px;font-weight:800;letter-spacing:-.02em;margin-bottom:5px;}
+.appeal p{font-size:13.5px;color:var(--gray-700);line-height:1.55;}
+
+/* ---------- 매핑 (소구포인트 → 촬영법) ---------- */
+.map{display:flex;flex-direction:column;gap:14px;}
+.map-row{
+  display:grid;grid-template-columns:200px 1fr;
+  border:1px solid var(--gray-100);border-radius:var(--radius);overflow:hidden;
+}
+.map-key{
+  background:var(--gray-50);padding:18px 20px;
+  display:flex;flex-direction:column;justify-content:center;gap:6px;
+  border-right:1px solid var(--gray-100);
+}
+.map-key .badge{
+  align-self:flex-start;font-size:11.5px;font-weight:800;color:#fff;
+  padding:4px 10px;border-radius:999px;
+}
+.map-row.k1 .badge{background:var(--accent);}
+.map-row.k2 .badge{background:var(--mint);}
+.map-row.k3 .badge{background:var(--lav);}
+.map-row.k4 .badge{background:var(--pink);}
+.map-row.k5 .badge{background:var(--sky);}
+.map-key strong{font-size:15.5px;font-weight:800;letter-spacing:-.02em;color:var(--gray-900);}
+.map-val{padding:18px 22px;}
+.map-val .hint{font-size:12.5px;font-weight:800;color:var(--accent-dark);margin-bottom:8px;}
+.map-val ul{list-style:none;display:flex;flex-direction:column;gap:7px;}
+.map-val li{font-size:14.5px;color:var(--gray-900);padding-left:18px;position:relative;}
+.map-val li::before{content:"📸";position:absolute;left:0;font-size:11px;top:3px;}
+
+/* ---------- 컷 구성 ---------- */
+.cuts{display:flex;flex-direction:column;gap:12px;}
+.cut{
+  display:flex;gap:16px;align-items:flex-start;
+  border:1px solid var(--gray-100);border-radius:var(--radius);padding:18px 20px;background:#fff;
+}
+.cut .n{
+  flex-shrink:0;width:38px;height:38px;border-radius:12px;
+  background:var(--ink);color:#fff;font-size:16px;font-weight:800;
+  display:flex;align-items:center;justify-content:center;
+}
+.cut .txt h4{font-size:16px;font-weight:800;margin-bottom:4px;letter-spacing:-.02em;}
+.cut .txt p{font-size:14px;color:var(--gray-700);}
+
+/* ---------- 촬영 팁 ---------- */
+.tips{
+  background:#ffe39a;
+  border-radius:var(--radius);padding:24px 24px 22px;border:1px solid var(--gray-100);
+}
+.tips h3{font-size:16px;font-weight:800;margin-bottom:14px;display:flex;align-items:center;gap:8px;}
+.tip-chips{display:flex;flex-wrap:wrap;gap:9px;}
+.tip-chips span{
+  background:#fff;border:1px solid var(--gray-300);border-radius:999px;
+  font-size:13.5px;font-weight:600;color:var(--gray-900);padding:9px 15px;
+}
+
+/* ---------- 릴스 ---------- */
+.reels{
+  margin-top:14px;
+  background:#ffe39a;
+  border:1px solid var(--gray-100);
+  color:var(--gray-900);border-radius:var(--radius);padding:22px 24px;
+}
+.reels .rk{font-size:12.5px;font-weight:800;color:var(--accent-dark);margin-bottom:8px;letter-spacing:.03em;}
+.reels h3{font-size:17px;font-weight:800;margin-bottom:12px;color:var(--ink);}
+.reels ul{list-style:none;display:flex;flex-direction:column;gap:8px;}
+.reels li{font-size:14.5px;color:var(--gray-900);padding-left:20px;position:relative;}
+.reels li::before{content:"▸";position:absolute;left:2px;color:var(--accent);font-weight:800;}
+.reels strong{color:var(--accent-dark);font-weight:800;}
+
+/* ---------- Footer ---------- */
+.pfoot{
+  background:var(--gray-50);color:var(--gray-500);text-align:center;padding:28px;font-size:13px;
+  border-top:1px solid var(--gray-100);
+}
+.pfoot strong{color:var(--ink);font-weight:800;font-size:16px;display:block;margin-bottom:6px;}
+
+@media(max-width:640px){
+  body{padding:0;}
+  .page{border-radius:0;}
+  .hero{padding:38px 22px 34px;}
+  .hero h1{font-size:27px;}
+  .body{padding:6px 22px 40px;}
+  .spec{grid-template-columns:1fr 1fr;}
+  .appeal-grid{grid-template-columns:1fr;}
+  .map-row{grid-template-columns:1fr;}
+  .map-key{border-right:none;border-bottom:1px solid var(--gray-100);}
+}
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- HERO -->
+  <div class="hero">
+    <span class="eyebrow">📸 셀러 촬영 가이드</span>
+    <h1>어린이 안전우산<br>이렇게 촬영해 주세요</h1>
+    <p class="lead">어떤 매력을 담아야 하는지 한눈에! 아래 <strong>포인트</strong>를 참고해 촬영하시면 됩니다.</p>
+    <span class="product-chip">POE 자동 투명발광 어린이 안전우산</span>
+  </div>
+
+  <div class="body">
+
+    <!-- 0. 제품 정보 -->
+    <div class="sec">
+      <div class="sec-head">
+        <div class="sec-kicker">Product Info</div>
+        <h2>제품 정보</h2>
+      </div>
+      <div class="spec">
+        <div class="spec-item"><span class="sl">반지름</span><strong>55cm</strong></div>
+        <div class="spec-item"><span class="sl">총길이</span><strong>71cm</strong></div>
+        <div class="spec-item"><span class="sl">펼친길이</span><strong>94cm</strong></div>
+        <div class="spec-item"><span class="sl">무게</span><strong>278g</strong></div>
+        <div class="spec-item"><span class="sl">원단</span><strong>POE 원단</strong></div>
+        <div class="spec-item"><span class="sl">살대</span><strong>8개 (8K)</strong></div>
+      </div>
+      <p class="spec-note">※ 사이즈는 재는 방법에 따라 약간의 오차(±1~5mm)가 있을 수 있습니다.</p>
+    </div>
+
+    <!-- 1. 소구포인트 -->
+    <div class="sec">
+      <div class="sec-head">
+        <div class="sec-kicker">Point</div>
+        <h2>이 제품, 이런 점이 매력이에요</h2>
+        <p>촬영 전, 이 제품이 왜 좋은지부터 이해하고 담아주세요.</p>
+      </div>
+      <div class="appeal-grid">
+        <div class="appeal c1">
+          <div class="ico">🚸</div>
+          <h3>안전 속도표시 “30”</h3>
+          <p>우산에 30 표시 — 운전자에게 감속 신호를 주는 교통안전 포인트.</p>
+        </div>
+        <div class="appeal c2">
+          <div class="ico">✨</div>
+          <h3>투명 발광 · 반사광 띠</h3>
+          <p>야간·우천 시 빛이 반사돼 아이가 눈에 잘 띄어요.</p>
+        </div>
+        <div class="appeal c3">
+          <div class="ico">☝️</div>
+          <h3>원터치 자동 · 안전 스토퍼</h3>
+          <p>아이가 한 손으로 쉽게 개폐, 손 끼임 방지 설계까지.</p>
+        </div>
+        <div class="appeal c4">
+          <div class="ico">💪</div>
+          <h3>FRP 살대 내구성</h3>
+          <p>강풍에도 잘 안 부러지고 안 뒤집히는 튼튼한 8살대.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. 소구포인트 → 촬영법 매핑 -->
+    <div class="sec">
+      <div class="sec-head">
+        <div class="sec-kicker">How to shoot</div>
+        <h2>포인트별 촬영 방법</h2>
+        <p>매력 포인트를 <strong>어떻게 화면에 담는지</strong> 예시로 정리했어요.</p>
+      </div>
+      <div class="map">
+
+        <div class="map-row k1">
+          <div class="map-key"><span class="badge">POINT 1</span><strong>안전 “30” 표시</strong></div>
+          <div class="map-val">
+            <div class="hint">30 마크가 잘 보이게</div>
+            <ul>
+              <li>우산 위 “30” 표시 클로즈업</li>
+              <li>아이가 우산 쓴 전신에 30이 보이는 컷</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="map-row k2">
+          <div class="map-key"><span class="badge">POINT 2</span><strong>투명 발광 · 반사광</strong></div>
+          <div class="map-val">
+            <div class="hint">시인성이 느껴지게</div>
+            <ul>
+              <li>흐린 날·저녁에 반사광 띠가 빛나는 컷</li>
+              <li>투명 창 너머로 아이 얼굴이 보이는 컷</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="map-row k3">
+          <div class="map-key"><span class="badge">POINT 3</span><strong>원터치 자동</strong></div>
+          <div class="map-val">
+            <div class="hint">펴지는 순간을</div>
+            <ul>
+              <li>버튼 눌러 자동으로 펴지는 장면</li>
+              <li>아이 혼자 손쉽게 펴는 모습</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="map-row k4">
+          <div class="map-key"><span class="badge">POINT 4</span><strong>튼튼한 살대</strong></div>
+          <div class="map-val">
+            <div class="hint">견고함이 보이게</div>
+            <ul>
+              <li>펼친 우산의 8살대 구조 컷</li>
+              <li>손잡이·안전 스토퍼 등 디테일 클로즈업</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="map-row k5">
+          <div class="map-key"><span class="badge">POINT 5</span><strong>등·하원 활용</strong></div>
+          <div class="map-val">
+            <div class="hint">실제 사용 상황으로</div>
+            <ul>
+              <li>비 오는 날 등원·하원하는 장면</li>
+              <li>책가방 메고 우산 쓰고 걷는 모습</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 3. 컷 구성 -->
+    <div class="sec">
+      <div class="sec-head">
+        <div class="sec-kicker">Composition</div>
+        <h2>컷 구성 가이드</h2>
+        <p>이 세 가지 컷은 꼭 담아주세요.</p>
+      </div>
+      <div class="cuts">
+        <div class="cut">
+          <div class="n">1</div>
+          <div class="txt">
+            <h4>메인 컷</h4>
+            <p>아이가 우산을 쓴 전신 모습 — 노란 우산과 “30” 표시가 잘 보이게.</p>
+          </div>
+        </div>
+        <div class="cut">
+          <div class="n">2</div>
+          <div class="txt">
+            <h4>사용 컷</h4>
+            <p>비 오는 날 등하원 등 실제 사용 장면 — 걷거나 우산 쓰는 자연스러운 순간.</p>
+          </div>
+        </div>
+        <div class="cut">
+          <div class="n">3</div>
+          <div class="txt">
+            <h4>디테일 컷</h4>
+            <p>“30” 표시, 반사광 띠, 손잡이, 안전 스토퍼, 투명 창 등 가까이서 클로즈업.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. 촬영 팁 -->
+    <div class="sec">
+      <div class="sec-head">
+        <div class="sec-kicker">Tips</div>
+        <h2>촬영 팁</h2>
+      </div>
+      <div class="tips">
+        <h3>💡 이렇게 찍으면 더 예뻐요</h3>
+        <div class="tip-chips">
+          <span>자연광 활용</span>
+          <span>흐린 날 시인성 강조</span>
+          <span>아이 표정 담기</span>
+          <span>“30” 표시 강조</span>
+          <span>반사광 살리기</span>
+          <span>가로·세로 다양하게</span>
+        </div>
+      </div>
+      <div class="reels">
+        <div class="rk">REELS</div>
+        <h3>릴스 촬영 시</h3>
+        <ul>
+          <li><strong>15~30초</strong> 권장</li>
+          <li>자동으로 펴지는 장면 포함</li>
+          <li>비 오는 날 걷는 모습으로 <strong>안전·시인성</strong> 강조</li>
+          <li>실제 사용하는 자연스러운 후기 흐름으로</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <div class="pfoot">
+    <strong>모여라딜</strong>
+    함께 성장하는 셀러 촬영 가이드
+  </div>
+
+</div>
+
+</body>
+</html>
