@@ -7,27 +7,27 @@
 <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
 <style>
 :root{
-  --ink:#1d1b23;
-  --gray-900:#2a2730;
-  --gray-700:#5a5563;
-  --gray-500:#8b8694;
-  --gray-300:#dcd8e2;
-  --gray-100:#f1eef6;
-  --gray-50:#faf8fd;
+  --ink:#231f14;
+  --gray-900:#2e2a1d;
+  --gray-700:#5f5844;
+  --gray-500:#948c74;
+  --gray-300:#e2dcc8;
+  --gray-100:#f3eede;
+  --gray-50:#faf6ea;
   --white:#fff;
-  --accent:#ff8a5c;       /* coral */
-  --accent-dark:#e5673a;
-  --mint:#7fd1c1;
-  --lav:#b3a4e6;
-  --pink:#f3a6c4;
-  --sky:#8fc3ef;
+  --accent:#f6b100;       /* yellow */
+  --accent-dark:#b7810a;
+  --mint:#e0a92e;         /* honey */
+  --lav:#f59331;          /* orange */
+  --pink:#f97b4f;         /* coral */
+  --sky:#f6c445;          /* light amber */
   --radius:20px;
   --radius-sm:12px;
 }
 *{margin:0;padding:0;box-sizing:border-box;}
 body{
   font-family:'Pretendard',-apple-system,BlinkMacSystemFont,sans-serif;
-  background:#ece8f4;
+  background:#f2e9d4;
   color:var(--ink);
   line-height:1.65;
   word-break:keep-all;
@@ -38,7 +38,7 @@ body{
 .page{
   width:760px;max-width:100%;margin:0 auto;
   background:var(--white);border-radius:28px;overflow:hidden;
-  box-shadow:0 12px 50px rgba(60,40,90,.12);
+  box-shadow:0 12px 50px rgba(120,90,20,.14);
 }
 
 /* ---------- Hero ---------- */
@@ -46,10 +46,10 @@ body{
   position:relative;
   padding:48px 44px 44px;
   background:
-    radial-gradient(120% 90% at 12% 0%, #ffe1cf 0%, rgba(255,225,207,0) 55%),
-    radial-gradient(120% 90% at 90% 10%, #d9cff7 0%, rgba(217,207,247,0) 55%),
-    radial-gradient(130% 120% at 70% 100%, #cdeee7 0%, rgba(205,238,231,0) 50%),
-    #fbf7ff;
+    radial-gradient(120% 90% at 12% 0%, #fff0bf 0%, rgba(255,240,191,0) 55%),
+    radial-gradient(120% 90% at 90% 10%, #ffe08a 0%, rgba(255,224,138,0) 55%),
+    radial-gradient(130% 120% at 70% 100%, #ffe6b0 0%, rgba(255,230,176,0) 50%),
+    #fffdf3;
   overflow:hidden;
 }
 .hero .eyebrow{
@@ -57,7 +57,7 @@ body{
   background:#fff;border:1px solid var(--gray-300);
   font-size:13px;font-weight:800;color:var(--accent-dark);
   padding:7px 14px;border-radius:999px;margin-bottom:18px;
-  box-shadow:0 4px 14px rgba(120,90,160,.08);
+  box-shadow:0 4px 14px rgba(160,120,20,.10);
 }
 .hero h1{
   font-size:34px;font-weight:800;letter-spacing:-.035em;line-height:1.25;
@@ -96,10 +96,10 @@ body{
   width:44px;height:44px;border-radius:13px;display:flex;align-items:center;justify-content:center;
   font-size:22px;margin-bottom:13px;
 }
-.appeal.c1 .ico{background:#ffe6d8;}
-.appeal.c2 .ico{background:#d9f2ec;}
-.appeal.c3 .ico{background:#e6dffb;}
-.appeal.c4 .ico{background:#fce0ec;}
+.appeal.c1 .ico{background:#fff0c2;}
+.appeal.c2 .ico{background:#ffe7ad;}
+.appeal.c3 .ico{background:#ffdfb0;}
+.appeal.c4 .ico{background:#ffd9c4;}
 .appeal h3{font-size:16px;font-weight:800;letter-spacing:-.02em;margin-bottom:5px;}
 .appeal p{font-size:13.5px;color:var(--gray-700);line-height:1.55;}
 
@@ -146,7 +146,7 @@ body{
 
 /* ---------- 촬영 팁 ---------- */
 .tips{
-  background:linear-gradient(135deg,#fff3ec,#f4ecfb);
+  background:linear-gradient(135deg,#fff6d6,#ffeec2);
   border-radius:var(--radius);padding:24px 24px 22px;border:1px solid var(--gray-100);
 }
 .tips h3{font-size:16px;font-weight:800;margin-bottom:14px;display:flex;align-items:center;gap:8px;}
@@ -159,7 +159,7 @@ body{
 /* ---------- 릴스 ---------- */
 .reels{
   margin-top:14px;
-  background:linear-gradient(135deg,#fdeee6,#efe7fb);
+  background:linear-gradient(135deg,#fff2cf,#ffe6c4);
   border:1px solid var(--gray-100);
   color:var(--gray-900);border-radius:var(--radius);padding:22px 24px;
 }
